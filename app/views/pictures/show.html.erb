@@ -1,0 +1,16 @@
+<div class="extra-padding-top"></div>
+<%= render @picture %>
+<h3>Comments</h3>
+<div id="comments">
+  <%= nested_messages @picture.messages.arrange(:order => :created_at) %>
+</div>
+<%= form_for([@picture, @picture.messages.new(:parent_id => params[:parent_id])]) do |f| %>
+    <div class="field">
+      <%= f.label :Comment %><br />
+      <%= f.text_area :body %>
+    </div>
+    <div class="actions">
+      <%= f.submit 'Post' %>
+    </div>
+<% end %>
+

@@ -1,0 +1,35 @@
+<div class="extra-padding-top"></div>
+<div class="main-edit">
+  <div class = "left-profile">
+    <%= image_tag current_user.profile.photo.url, :style => " height: 100%; width: 100%;" %>
+      &nbsp; woow
+    </div>
+      <div class="form">
+        <%= form_for(@profile, :html => {:multipart => "true", :class => "edit-profile-form" }) do |f| %>
+            <% if @profile.errors.any? %>
+                <div id="error_explanation">
+                  <h2><%= pluralize(@profile.errors.count, "error") %> prohibited this this profile information from being saved:</h2>
+
+                  <ul>
+                    <% @profile.errors.full_messages.each do |msg| %>
+                        <li><%= msg %></li>
+                    <% end %>
+                  </ul>
+                </div>
+            <% end %>
+            <fieldset>
+              <div class="control-group">
+                <%= f.label "Select Picture" %>
+                <%= f.file_field :photo %>
+              </div>
+              <div class="control-group">
+                <%= f.submit "Save" %>
+              </div>
+            </fieldset>
+        <% end %>
+    </div>
+  </div>
+  <div class = "right-profile-pictures">
+    <%= render 'picture' %>
+  </div>
+</div>

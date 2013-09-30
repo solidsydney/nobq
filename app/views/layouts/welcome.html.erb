@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+  <title>Nigeria Online Beauty Queen</title>
+
+  <!-- Bootstrap core CSS -->
+  <%= stylesheet_link_tag "application", :media => "all" %>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <![endif]-->
+
+  <!-- Custom styles for this template -->
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<div class="master-head">
+  <h1>Nigeria Online Beauty Queen</h1>
+  <p> Every Woman is a Beauty Queen </p>
+</div>
+
+<%= content_tag :p, notice, :class => 'notice' if notice.present? %>
+<%= content_tag :p, alert, :class => 'alert' if alert.present? %>
+
+<%= yield(:head_header) %>
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" style="margin-bottom: 0px; border-bottom:2px solid black; box-shadow: 0px 0px 0px 2px darkgrey">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag "next.jpg" %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Its totally easy and free.</h1>
+          <p>Its Simply click on the link below to register, check the contestant option to register as a contestant, and be on your way to becoming Nigeria's first online beauty queen </p>
+          <p><a class="btn btn-large btn-primary" href="<%= new_user_registration_path %>" style="color: #ffffff;">Sign up today</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "test.png" %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Every Woman is a beauty Queen</h1>
+          <p>.</p>
+          <p><a class="btn btn-large btn-primary" href="<%= about_us_index_path %>">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "best.png" %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Unlimited Photos and Styles</h1>
+          <p>Upload as many photos as possible and make your profile a home for all to visit and earn more points in-other for you to appear in our top gallery </p>
+          <p><a class="btn btn-large btn-primary" href="<%= pictures_path %>">Browse gallery</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="index.html#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="index.html#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div><!-- /.carousel -->
+
+
+
+<div class="container2">
+  <div class="master-middle">
+    <h1>Every Woman Is a Queen</h1>
+    <p> Hurry and vote for you favourite woman </p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4"><div class="carbonad">
+      <p><span>Nigeria Online Beauty Queen</span> is Nigeria's first and biggest online facial beauty contest ever, were every
+        eligible nigeria woman anywhere in the world is privileged to contest in the largest online beauty pageant and be crowned the next quarter's nigeria online beauty queen.</p>
+      <table>
+        <tr>
+        <td>
+          <div class = "image-number1">
+            <div>
+              <%= image_tag ("best.png"), :class => "doc" %>
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div class = " image-number1">
+            <div>
+              <%= image_tag ("best.png"), :class => "doc" %>
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div class = " image-number1">
+            <%= image_tag ("best.png"), :class => "doc" %>
+          </div>
+
+      </td>
+      </tr>
+
+    </table>
+
+
+    </div></div>
+    <div class="col-md-8 pull-right">
+      <table>
+      <td>
+        <div class = " image-number1">
+          <div class="image">
+            <%= image_tag ("best.png"), :class => "top-rated" %>
+          </div>
+        </div>
+
+      </td>
+      <td>
+        <div class = " image-number1">
+          <div>
+            <%= image_tag ("best.png"), :class => "top-rated" %>
+          </div>
+        </div>
+      </td>
+
+      <td>
+        <div class = " image-number1">
+          <div>
+            <%= image_tag ("best.png"), :class => "top-rated" %>
+          </div>
+        </div>
+      </td>
+
+      <td>
+        <div class = " image-number1">
+          <%= image_tag ("best.png"), :class => "top-rated" %>
+        </div>
+
+    </td>
+    <tr>
+      <td>
+        <div class = " image-number1">
+          <div class="image">
+            <%= image_tag ("bg4.JPG"), :class => "top-rated" %>
+          </div>
+        </div>
+
+      </td>
+      <td>
+        <div class = " image-number1">
+          <div>
+
+            <%= image_tag ("bg4.JPG"), :class => "top-rated" %>
+          </div>
+        </div>
+      </td>
+
+      <td>
+        <div class = " image-number1">
+          <div>
+            <%= image_tag ("bg3.jpg"), :class => "top-rated" %>
+          </div>
+      </td>
+
+      <td>
+        <div class = " image-number1" >
+          <%= image_tag ("bg2.jpg"), :class => "top-rated"  %>
+        </div>
+      </td>
+  </tr>
+  </table>
+</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="pull-right"><a href="<%= home_index_path %>">Enter Main App</a></p>
+    <p>&copy; Crytal Media, Inc. &middot; <a href="<%= privacy_index_path %>">Privacy</a> &middot; <a href="<%= terms_index_path %>">Terms</a></p>
+  </footer>
+
+</div><!-- /.container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<%= javascript_include_tag "application" %>
+</body>
+</html>
+
+
+

@@ -1,0 +1,29 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.top-rated-image {
+  height: 270px;
+  float: left;
+  width: 170px;
+  padding: 5px 0px 5px 0px ;
+  overflow: hidden;
+}
+
+ .vote_count {
+    background: rgba(0,0,0, 0.65);
+    color: #fff;
+    position: absolute;
+    width: 170px;
+   text-align: center;
+   padding: 5px 0px 5px 0px ;
+   margin-top: 100px;
+  }
+
+
+
+
+
+
+tr{
+ margin-top: 0px;
+}

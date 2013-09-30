@@ -1,0 +1,64 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+.extra-padding-top {
+    margin-top: 40px;
+}
+
+.profile-mini-pic {
+    height: 50px;
+    width: 50px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 10px;
+    padding-top: 5px;
+}
+.app-login-form {
+    margin-top: 13px;
+}
+.form-inline-pass {
+    color: #fff;
+}
+.form-control1{
+    display: inline;
+    width: 40%;
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555555;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.social-image {
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+.left-f-t {
+    background: #dce9dd;
+    background: -webkit-linear-gradient(-90deg, #dce9dd, #ccdfcd);
+    background: -moz-linear-gradient(-90deg, #dce9dd, #ccdfcd);
+    background: linear, -90deg, #dce9dd, #ccdfcd;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFDCE9DD', endColorstr='#FFCCDFCD');
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFDCE9DD', endColorstr='#FFCCDFCD');
+    border-bottom: 1px solid #adcbaf;
+    color: #416347;
+    margin-top: 250px;
+}

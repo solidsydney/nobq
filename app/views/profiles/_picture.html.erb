@@ -1,0 +1,3 @@
+<% for picture in @pictures %>
+    <%= image_tag picture.photo.url(:thumb), :class => "pictures-in-edit" %>
+<% end %>

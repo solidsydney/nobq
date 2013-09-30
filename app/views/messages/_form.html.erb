@@ -1,0 +1,10 @@
+<%= form_for([@picture, @picture.messages.new(:parent_id => params[:parent_id])]) do |f| %>
+    <div class="field">
+      <%= f.hidden_field :parent_id %>
+      <%= f.label :Comment %><br />
+      <%= f.text_area :body %>
+    </div>
+    <div class="actions">
+      <%= f.submit 'Post Comment' %>
+    </div>
+<% end %>

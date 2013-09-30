@@ -1,0 +1,5 @@
+<%= image_tag picture.photo %>
+<%= pluralize picture.reputation_for(:votes).to_i, "votes" %>
+
+   | <%= link_to "up", vote_profile_picture_path(picture, type: "up"), method: "post" %>
+   | <%= link_to "down", vote_profile_picture_path(picture, type: "down"), method: "post" %>

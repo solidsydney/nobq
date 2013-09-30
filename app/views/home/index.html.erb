@@ -1,0 +1,117 @@
+<div class="extra-padding-top"></div> <br />
+        <table class="pull-left">
+          <td>
+    <div class = " image-number1">
+      <div class="image">
+        <%= image_tag @profile[0].photo.url(:medium), :class => "top-rated-image"  %>
+        <div class="vote_count"><i class="glyphicon glyphicon-thumbs-up"></i><%= pluralize(@profile[0].reputation_for(:votes).to_i, "vote") %></div>
+      </div>
+    </div>
+
+          </td>
+          <td>
+      <div class = " image-number1">
+        <div>
+          <%= image_tag @profile[1].photo.url(:medium), :class => "top-rated-image " %>
+          <div class="vote_count"><i class="glyphicon glyphicon-thumbs-up"></i><%= pluralize(@profile[1].reputation_for(:votes).to_i, "vote") %></div>
+        </div>
+   </div>
+          </td>
+
+          <td>
+            <div class = " image-number1">
+              <div>
+              <%= image_tag @profile[3].photo.url(:medium), :class => "top-rated-image " %>
+              <div class="vote_count"><i class="glyphicon glyphicon-thumbs-up"></i><%= pluralize(@profile[3].reputation_for(:votes).to_i, "vote") %></div>
+              </div>
+            </div>
+          </td>
+
+          <td>
+            <div class = " image-number1">
+               <%= image_tag ("best.png"), :class => "top-rated-image " %>
+              <div class="vote_count"><i class="glyphicon glyphicon-thumbs-up"></i>vote</div>
+              </div>
+            </div>
+          </td>
+          <tr>
+            <td>
+              <div class = " image-number1">
+                <div class="image">
+                  <%= image_tag @profile[0].photo.url(:medium), :class => "top-rated-image"  %>
+                  <div class="vote_count"><i class="glyphicon glyphicon-thumbs-up"></i><%= pluralize(@profile[0].reputation_for(:votes).to_i, "vote") %></div>
+                </div>
+              </div>
+
+            </td>
+            <td>
+              <div class = " image-number1">
+                <div>
+
+                  <%= image_tag ("bg4.JPG"), :class => "top-rated-image " %>
+                  <div class="vote_count"><i class="glyphicon glyphicon-thumbs-up"></i><%= pluralize(@profile[1].reputation_for(:votes).to_i, "vote") %></div>
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <div class = " image-number1">
+                <div>
+                  <%= image_tag ("bg3.jpg"), :class => "top-rated-image " %>
+                  <div class="vote_count"><i class="glyphicon glyphicon-thumbs-up"></i><%= pluralize(@profile[3].reputation_for(:votes).to_i, "vote") %></div>
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <div class = " image-number1" >
+                <%= image_tag ("bg2.jpg"), :class => "top-rated-image "  %>
+                <div class="vote_count"><i class="glyphicon glyphicon-thumbs-up"></i>vote</div>
+              </div>
+              </div>
+          </tr>
+        </table>
+
+
+<table class="pull-right">
+
+
+  <tr>
+    <td>
+      <div class = " image-number1">
+        <div class="image">
+          <%= image_tag @profile[0].photo.url(:medium), :class => "top-rated-image"  %>
+          <div class="vote_count"><i class="glyphicon glyphicon-thumbs-up"></i><%= pluralize(@profile[0].reputation_for(:votes).to_i, "vote") %></div>
+        </div>
+      </div>
+
+    </td>
+    <td>
+      <div class = " image-number1">
+        <div>
+
+          <%= image_tag ("bg4.JPG"), :class => "top-rated-image " %>
+          <div class="vote_count"><i class="glyphicon glyphicon-thumbs-up"></i><%= pluralize(@profile[1].reputation_for(:votes).to_i, "vote") %></div>
+        </div>
+      </div>
+    </td>
+      </tr>
+  <tr>
+    <td>
+      <div class = " image-number1">
+        <div>
+          <%= image_tag ("bg3.jpg"), :class => "top-rated-image " %>
+          <div class="vote_count"><i class="glyphicon glyphicon-thumbs-up"></i><%= pluralize(@profile[3].reputation_for(:votes).to_i, "vote") %></div>
+        </div>
+      </div>
+    </td>
+
+    <td>
+      <div class = " image-number1">
+        <%= image_tag ("bg2.jpg"), :class => "top-rated-image " %>
+        <div class="vote_count"><i class="glyphicon glyphicon-thumbs-up"></i>vote</div>
+      </div>
+      </div>
+    </td>
+  </tr>
+</table>

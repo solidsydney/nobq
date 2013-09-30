@@ -1,0 +1,8 @@
+    <div class = "col-sm-pull-4">
+      <%= image_tag @profile[1].photo.url(:medium), :class => "top-rated-image" %>
+      <p> <%= pluralize(@profile[1].reputation_for(:votes).to_i, "vote") %> </p>
+    </div>
+    <div class = "col-sm-pull-4">
+      <%= image_tag @profile[2].photo.url(:medium), :class => "top-rated-image" %>
+      <p> <%= pluralize(@profile[2].reputation_for(:votes).to_i, "vote") %> </p>
+    </div>

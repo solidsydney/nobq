@@ -1,0 +1,10 @@
+<%= div_for message do %>
+    <h3>
+      <%= image_tag message.picture.profile.photo.url(:thumb) %>  said:
+      <%= message.body %>
+    </h3>
+
+    <span class='actions'>
+<%= link_to "reply", new_picture_message_path(@picture, :parent_id => message) %>
+</span>
+<% end %>
